@@ -15,7 +15,6 @@ int main(void){
 void escape(char s[], char t[]){
 	int i, j;
 	for (i=0; s[i] != '\0'; i++);
-	printf("%d\n", i);
 	for (j=0; t[j] != '\0'; j++, i++){
 		switch (t[j]){
 			case '\n':
