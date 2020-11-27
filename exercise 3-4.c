@@ -23,6 +23,8 @@ void itoa(int n, char s[])
 
 	if ((sign = n) < 0)
 		abs = -n;
+	else
+		abs = n;
 	do {
 		s[i++] = abs % 10 + '0';
 	} while ((abs /= 10) > 0);
